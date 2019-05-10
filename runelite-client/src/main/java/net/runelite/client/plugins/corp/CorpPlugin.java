@@ -142,8 +142,8 @@ public class CorpPlugin extends Plugin
 
 		switch (npc.getId())
 		{
-			case NpcID.CORPOREAL_BEAST:
-				log.debug("Corporeal beast spawn: {}", npc);
+			case NpcID.GENERAL_GRAARDOR:
+				log.debug("General Graardor spawn: {}", npc);
 				corp = npc;
 				yourDamage = 0;
 				totalDamage = 0;
@@ -171,7 +171,7 @@ public class CorpPlugin extends Plugin
 				// Show kill stats
 				String message = new ChatMessageBuilder()
 					.append(ChatColorType.NORMAL)
-					.append("Corporeal Beast: Your damage: ")
+					.append("General Graardor: Your damage: ")
 					.append(ChatColorType.HIGHLIGHT)
 					.append(Integer.toString(yourDamage))
 					.append(ChatColorType.NORMAL)
